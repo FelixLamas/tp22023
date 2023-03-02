@@ -1,0 +1,6 @@
+¿Puede ver el archivo tp2_1_2.c? ¿Por qué?
+no se puede ver el archivo, porque esta en otra rama 
+vuelva a ejecutar el comando gitk --all ¿Qué diferencias nota?
+se puede ver las dos ramas tanto la main como la Opcion2
+despues de usarel comando git merge Opcion_2 -m “merge opcion 2”
+se puede ver como se unen las dos ramas 
