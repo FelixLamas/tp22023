@@ -12,6 +12,7 @@ typedef struct
 }compu;
 
 void mostarPc(compu *listaPc);
+void pcVieja(compu *listaPc);
 
 int main(int argc, char const *argv[])
 {
@@ -29,6 +30,7 @@ int main(int argc, char const *argv[])
     }
 
     mostarPc(arregloPC);
+    pcVieja(arregloPC);
 
     return 0;
 }
@@ -43,5 +45,17 @@ void mostarPc(compu *listaPc){
         printf("cantidad: %d \n", listaPc[i].velocidad);
         printf("tipo cpu:%s\n", listaPc[i].tipo_cpu);
     }
-    printf("***********************************************");
+    printf("***********************************************\n");
+}
+
+void pcVieja(compu *listaPc){
+    int j=0;
+    for (int i = 1; i < 5; i++)
+    {
+        if (listaPc[j].anio > listaPc[i].anio)
+        {
+            j = i;
+        }
+    }
+    printf("La pc mas vieja es del año: %d", listaPc[j].anio);
 }
